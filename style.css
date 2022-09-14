@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    margin: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.mobile {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.mobile-perfume {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.desktop {
+    display: none;
+    margin: 0;
+    height: 0;
+}
+
+.text {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+p {
+    margin-top: 10px;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 15px 0 10px 0;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.price {
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px 6px;
+}
+
+.shopping-cart {
+    padding-right: 10px;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* tablet styles */
+ @media only screen and (min-width: 768px) {
+
+    main {
+        display: flex;
+        flex: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-wrapper {
+        margin: 80px 20px;
+        width: 75%;
+    }
+    .mobile {
+        width: 80%;
+    }
+
+    .text {
+        width: 80%;
+    }
+} 
+
+@media only screen and (min-width: 1000px) {
+    main {
+        margin-top: 180px;
+        margin-bottom: 150px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+
+    .mobile,
+    .mobile-perfume {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        width: 30%;
+        height: auto;
+    }
+
+    .desktop-perfume {
+        border-radius: 15px 0 0 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        width: 30%;
+        padding: 12px 20px;
+        border-radius: 0 15px 15px 0;
+        overflow:auto;
+    }
+
+    button:hover,
+    button:focus {
+        background-color: rgb(5, 49, 5);
+    }
+}
